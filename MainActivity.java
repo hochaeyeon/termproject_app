@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton spring;
     ImageView pochun1;
     ImageView pochun2;
+    ImageView pochun3;
     Button btn;
 
     int index = 0;
@@ -105,26 +106,36 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        btn.setOnClickLisner(new View.OnClickListener() {
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
-            index = random.nextInt(2);
+            public void onClick(View v) {
+                index = random.nextInt(3);
 
-            switch (index) {
-                case 0:
-                    pochun1.setVisibility(View.VISIBLE);
-                    pochun2.setVisibility(View.INVISIBLE);
-                    break;
+                switch (index) {
+                    case 0:
+                        pochun1.setVisibility(View.VISIBLE);
+                        pochun2.setVisibility(View.INVISIBLE);
+                        pochun3.setVisibility(View.INVISIBLE);
+                        break;
 
-                case 1:
-                    pochun1.setVisibility(View.VISIBLE);
-                    pochun2.setVisibility(View.INVISIBLE);
+                    case 1:
+                        pochun2.setVisibility(View.VISIBLE);
+                        pochun1.setVisibility(View.INVISIBLE);
+                        pochun3.setVisibility(View.INVISIBLE);
 
-                    break;
+                    case 2:
+                        pochun3.setVisibility(View.VISIBLE);
+                        pochun1.setVisibility(View.INVISIBLE);
+                        pochun2.setVisibility(View.INVISIBLE);
+
+                        break;
 
 
+                }
 
 
             }
+
         });
 
 
@@ -133,4 +144,5 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
 }
