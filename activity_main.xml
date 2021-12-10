@@ -9,11 +9,11 @@
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="How are you today?"
-        android:textSize="20dp"
-        android:layout_gravity="center"/>
+        android:layout_height="34dp"
+        android:layout_marginTop="50dp"
+        android:text="How are you felling today?"
+        android:textSize="20sp"
+        android:layout_gravity="center" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -22,76 +22,120 @@
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp">
 
-
-
         <ImageButton
             android:id="@+id/happy"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="50dp"
             android:background="@drawable/happy" />
 
-        <ImageButton
-            android:id="@+id/angle"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/angle" />
+
 
         <ImageButton
             android:id="@+id/sad"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="50dp"
             android:background="@drawable/sad" />
+
+        <ImageButton
+            android:id="@+id/angle"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/angle"/>
     </LinearLayout>
 
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginTop="50dp"
+        android:text="seezn"
+        android:textSize="20sp"
+        android:layout_gravity="center" />
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp">
 
 
 
         <ImageButton
-            android:id="@+id/nervous"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:id="@+id/christmas"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="20dp"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/nervous" />
+            android:layout_marginTop="30dp"
+            android:background="@drawable/CHRISTMAS" />
 
         <ImageButton
-            android:id="@+id/boring"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:id="@+id/summer"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_marginRight="20dp"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/boring" />
+            android:layout_marginTop="30dp"
+            android:background="@drawable/SUMMER" />
 
         <ImageButton
-            android:id="@+id/love"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:id="@+id/spring"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_marginRight="20dp"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/love" />
+            android:layout_marginTop="30dp"
+            android:background="@drawable/SPRING" />
+
     </LinearLayout>
 
-    <LinearLayout
+    <Button
+        android:id="@+id/btn"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="click"
+        android:textSize="16dp" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp">
 
 
-    </LinearLayout>
+        <ImageView
+            android:id="@+id/pochun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:srcCompat="@drawable/pochun" />
+
+        <ImageView
+            android:id="@+id/pochun1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/pochun1" />
+
+        <ImageView
+            android:id="@+id/pochun2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/pochun2" />
+
+    </FrameLayout>
+
 
 
 </LinearLayout>
-
