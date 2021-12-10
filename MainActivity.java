@@ -1,19 +1,15 @@
-package com.example.termaplication;
+package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
-import android.os.Bundle;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import java.util.Random;
-import java.util.Scanner;
+import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
-
     private ImageButton happy;
     private ImageButton angle;
     private ImageButton sad;
@@ -23,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView pochun1;
     ImageView pochun2;
     ImageView pochun3;
+    ImageView pochun;
     Button btn;
 
     int index = 0;
@@ -42,9 +39,11 @@ public class MainActivity extends AppCompatActivity {
         spring = findViewById(R.id.spring);
         pochun1 = findViewById(R.id.pochun1);
         pochun2 = findViewById(R.id.pochun2);
+        pochun = findViewById(R.id.pochun);
+        pochun3 = findViewById(R.id.pochun3);
         btn = (Button) findViewById(R.id.btn);
 
-        happy.setOnClickListener(new View.OnClickListener() {
+        /*happy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, SubActivity.class);
@@ -55,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-       angle.setOnClickListener(new View.OnClickListener() {
+        angle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, SubActivity.class);
@@ -103,7 +102,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
 
-        });
+        });*/
+
 
 
         btn.setOnClickListener(new View.OnClickListener() {
@@ -113,21 +113,24 @@ public class MainActivity extends AppCompatActivity {
 
                 switch (index) {
                     case 0:
+                        pochun.setVisibility(View.INVISIBLE);
                         pochun1.setVisibility(View.VISIBLE);
                         pochun2.setVisibility(View.INVISIBLE);
                         pochun3.setVisibility(View.INVISIBLE);
                         break;
 
                     case 1:
+                        pochun.setVisibility(View.INVISIBLE);
                         pochun2.setVisibility(View.VISIBLE);
                         pochun1.setVisibility(View.INVISIBLE);
                         pochun3.setVisibility(View.INVISIBLE);
+                        break;
 
                     case 2:
+                        pochun.setVisibility(View.INVISIBLE);
                         pochun3.setVisibility(View.VISIBLE);
                         pochun1.setVisibility(View.INVISIBLE);
                         pochun2.setVisibility(View.INVISIBLE);
-
                         break;
 
 
@@ -144,5 +147,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
 
 }
